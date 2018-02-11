@@ -12,21 +12,37 @@
 
 <body>
     <div class="w-100 flex flex-column" id="app-container">
-        <div class="w-100 flex-auto flex items-center bg-white b--silver bb">
+        <nav class="navbar w-100 flex items-center justify-between bg-white b--silver bb">
+            <div class="navbar__brand pl4">FreeStarter</div>
+            <div class="w-25">
+                <ul class="flex justify-around" style="list-style: none;">
+                    <li>How it Works</li>
+                    <li>About</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero-section w-100 flex items-center bg-lightest-blue b--silver bb">
             <div class="w-100 flex pa5">
-                <div class="w-40 h-5 bg-gray">
+                <div class="w-40 h-50">
+                    <div class="flex  justify-around w-100 h-75">
+                        <img src="images/Piggy.png" height=" 500px" />
+                    </div>
                 </div>
-                <div class="flex-auto pa5">
+                <div class="w-60 flex-auto pa5">
+                    <h1 class="hero-section__heading h1">Invest in <span class="o-80" style="color: #660685;">Crypto</span> For Free !!</h1>
+                    <br>
+                    <p class="hero-section__description w-80 p normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis optio ea aspernatur sunt, natus explicabo atque rerum deserunt sit dolorum nihil commodi dicta, laudantium maxime quibusdam animi exercitationem nobis temporibus.</p>
                     <button class="hk-button--primary">
-                        Lorem ipsum
+                        Get Started
                     </button>
                 </div>
             </div>
-        </div>
-        <div class="w-100 flex-auto flex flex-column items-center justify-center bg-white b--silver bb">
+        </section>
+        <section class="w-100 flex-auto flex flex-column items-center justify-center bg-white b--silver bb">
             <img class="w-80" src="images/Info-graphic_2.png">
-        </div>
-        <section class="startup-section js-startup-section w-100 flex-auto flex items-center justify-center bg-lightest-blue b--silver bb">
+        </section>
+        <section class="startup-section js-startup-section w-100 flex items-center justify-center bg-lightest-blue b--silver bb">
             <div class="startup-wrapper js-startup-wrapper flex justify-around w-90 h-75">
                 <div class="startup-card js-startup-card bg-white b--silver ba br2">
                     <div>
@@ -63,14 +79,15 @@
                 </div>
             </div>
         </section>
-        <section class="donation-section js-donation-section w-100 flex-auto flex flex-column items-center justify-center relative bg-lightest-blue b--silver bb hidden">
+        <section class="donation-section js-donation-section w-100 flex flex-column items-center justify-center relative bg-lightest-blue b--silver bb hidden">
             <button class="donation-section__cta--back js-donation-section__cta--back hk-button--secondary absolute top-0 left-0 ma5">Back</button>
             <div class="w-50">
-                <input class="donation-section__input hk-input w-100" placeholder="Donation Amount"/>
+                <input class="donation-section__input hk-input w-100" placeholder="Donation Amount" />
             </div>
             <button class="donation-section__cta--main js-donation-section__cta--main hk-button--primary w-25 ma5">Donate</button>
         </section>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>

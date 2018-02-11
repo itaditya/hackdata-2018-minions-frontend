@@ -14,6 +14,34 @@ body {
   height: 30px;
 }
 
+.navbar {
+  height: 60px;
+}
+
+.hero-section {
+  height: calc(100vh - 60px);
+}
+
+.hero-section__heading {
+  font-size: 50px;
+  color: #333;
+}
+
+.hero-section__description {
+  font-size: 20px;
+  color: #555;
+  line-height: 29px;
+}
+
+.startup-section, .donation-section {
+  height: 100vh;
+}
+
+.navbar__brand {
+  font-size: 30px;
+  color: #660685;
+}
+
 /*helpers*/
 .hidden {
   display: none;
