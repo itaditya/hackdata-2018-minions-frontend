@@ -37,6 +37,10 @@ body {
   height: 100vh;
 }
 
+.startup-card {
+  width: 350px;
+}
+
 .navbar__brand {
   font-size: 30px;
   color: #660685;
