@@ -26,6 +26,7 @@ window.onload = function() {
   const startupWrapper = startupSection.querySelector('.js-startup-wrapper');
   const donationSectionInput = donationSection.querySelector('.js-donation-section__input');
   const donationSectionCtaMainText = donationSection.querySelectorAll('.js-donation-section__cta--main span');
+  const donationAmtTexts = startupWrapper.querySelectorAll('.js-donation-amt');
 
   const startup_donationToggler = elemsToggler(startupSection, donationSection);
   const donationBtnTextToggler = elemsToggler(...donationSectionCtaMainText);
@@ -66,9 +67,8 @@ window.onload = function() {
         if(res.message) {
           setTimeout(() => {
             donationBtnTextToggler();
-          }, 5500);
-          setTimeout(() => {
-            donationBtnTextToggler();
+            const elem = donationAmtTexts[selectedStartupIndex];
+            elem.innerHTML = parseInt(elem.innerHTML) + donationAmt;
           }, 2000);
         }
       })

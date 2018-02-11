@@ -46,6 +46,10 @@ body {
   color: #660685;
 }
 
+.navbar__brand__image {
+  height: 50px;
+}
+
 /*helpers*/
 .hidden {
   display: none;
