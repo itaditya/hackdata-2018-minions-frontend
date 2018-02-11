@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://www.herokucdn.com/purple3/latest/purple3.min.css">
-  <link rel="stylesheet" href="/index.css">
-  <title>FreeStarter</title>
+    <meta charset="utf-8" />
+    <link href="https://www.herokucdn.com/purple3/latest/purple3.min.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <title>
+        FreeStarter
+    </title>
 </head>
+
 <body>
-  <div id="app-container" class="w-100 flex flex-column">
-    <div class="w-100 flex-auto flex items-center bg-white b--silver bb">
-      <div class="w-100 flex pa5">
-          <div class="w-40 h-5 bg-gray"></div>
-          <div class="flex-auto pa5">
-            <button class="hk-button--primary">Lorem ipsum</button>
-          </div>
+    <div class="w-100 flex flex-column" id="app-container">
+        <div class="w-100 flex-auto flex items-center bg-white b--silver bb">
+            <div class="w-100 flex pa5">
+                <div class="w-40 h-5 bg-gray">
+                </div>
+                <div class="flex-auto pa5">
+                    <button class="hk-button--primary">
+                        Lorem ipsum
+                    </button>
+                </div>
+            </div>
         </div>
+        <div class="w-100 flex-auto flex flex-column items-center justify-center bg-white b--silver bb">
+            <img class="w-80" src="images/Info-graphic_2.png">
+        </div>
+        <section class="startup-section js-startup-section w-100 flex-auto flex items-center justify-center bg-lightest-blue b--silver bb">
+            <div class="startup-wrapper js-startup-wrapper flex justify-around w-90 h-75">
+                <div class="startup-card js-startup-card bg-white b--silver ba br2">
+                    <div>
+                        <img class="startup-card__image" src="images/startup-1.png" />
+                    </div>
+                    <div class="">
+                        <h3 class="pa2">I am a text</h3>
+                        <div class="flex justify-end pa2">
+                            <button class="startup-card__cta js-startup-card__cta hk-button--primary">Donate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="startup-card js-startup-card bg-white b--silver ba br2">
+                    <div>
+                        <img class="startup-card__image" src="images/startup-2.webp" />
+                    </div>
+                    <div class="">
+                        <h3 class="pa2">I am a text</h3>
+                        <div class="flex justify-end pa2">
+                            <button class="startup-card__cta js-startup-card__cta hk-button--primary">Donate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="startup-card js-startup-card bg-white b--silver ba br2">
+                    <div>
+                        <img class="startup-card__image" src="images/startup-3.png" />
+                    </div>
+                    <div class="">
+                        <h3 class="pa2">I am a text</h3>
+                        <div class="flex justify-end pa2">
+                            <button class="startup-card__cta js-startup-card__cta hk-button--primary">Donate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="donation-section js-donation-section w-100 flex-auto flex flex-column items-center justify-center relative bg-lightest-blue b--silver bb hidden">
+            <button class="donation-section__cta--back js-donation-section__cta--back hk-button--secondary absolute top-0 left-0 ma5">Back</button>
+            <div class="w-50">
+                <input class="donation-section__input hk-input w-100" placeholder="Donation Amount"/>
+            </div>
+            <button class="donation-section__cta--main js-donation-section__cta--main hk-button--primary w-25 ma5">Donate</button>
+        </section>
     </div>
-    <div class="w-100 flex-auto bg-black-05 pa5">
-      <button class="hk-button--primary">Lorem ipsum</button>
-    </div>
-  </div>
-  <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -2,5 +2,19 @@ body {
   box-sizing: border-box;
 }
 #app-container {
-  min-height: 200vh;
+  min-height: 300vh;
+}
+
+.startup-card__image {
+  height: 300px;
+  width: 350px;
+}
+
+.donation-section__input {
+  height: 30px;
+}
+
+/*helpers*/
+.hidden {
+  display: none;
 }
