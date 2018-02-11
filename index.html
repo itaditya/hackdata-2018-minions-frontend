@@ -56,7 +56,7 @@
                         <h3 class="pa2">We are a company hell-bound to help women</h3>
                         <div class="flex justify-between pa2">
                             <p><span class="purple">11000 INR</span> collected so far</p>
-                            <button class="startup-card__cta js-startup-card__cta hk-button--primary">Donate</button>
+                            <button class="startup-card__cta js-startup-card__cta hk-button--primary" data-index="0">Donate</button>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                         <h3 class="pa2">You are the Youth, you are the change, help us help you</h3>
                         <div class="flex justify-between pa2">
                             <p><span class="purple">5000 INR</span> collected so far</p>
-                            <button class="startup-card__cta js-startup-card__cta hk-button--primary">Donate</button>
+                            <button class="startup-card__cta js-startup-card__cta hk-button--primary" data-index="1">Donate</button>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <h3 class="pa2">Support your Favorite Football Club with ease</h3>
                         <div class="flex justify-between pa2">
                             <p><span class="purple">8000 INR</span> collected so far</p>
-                            <button class="startup-card__cta js-startup-card__cta hk-button--primary">Donate</button>
+                            <button class="startup-card__cta js-startup-card__cta hk-button--primary" data-index="2">Donate</button>
                         </div>
                     </div>
                 </div>
@@ -89,9 +89,13 @@
         <section class="donation-section js-donation-section w-100 flex flex-column items-center justify-center relative bg-lightest-blue b--silver bb hidden">
             <button class="donation-section__cta--back js-donation-section__cta--back hk-button--secondary absolute top-0 left-0 ma5">Back</button>
             <div class="w-50">
-                <input class="donation-section__input hk-input w-100" placeholder="Donation Amount" />
+                <input class="donation-section__input js-donation-section__input hk-input w-100" placeholder="How much would you like to donate ?" />
             </div>
-            <button class="donation-section__cta--main js-donation-section__cta--main hk-button--primary w-25 ma5">Donate</button>
+            <button class="donation-section__cta--main js-donation-section__cta--main hk-button--primary w-25 ma5">
+                <span>Donate</span>
+                <span class="hidden">Donating ...</span>
+                <span class="hidden">Thanks !!</span>
+            </button>
         </section>
     </div>
     <script src="index.js"></script>
